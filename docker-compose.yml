@@ -35,6 +35,7 @@ services:
       - '3000:3000'
     networks:
       - crowdsec
+    depends_on: "crowdsec"
 networks:
   npm:
     external: true
