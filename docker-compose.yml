@@ -21,7 +21,7 @@ services:
       - npm
       - crowdsec
   metabase:
-    image: 'bobblybook/metabase:v0.44.1'
+    image: 'bobblybook/metabase:latest'
     restart: always
     container_name: crowdsec-metabase
     environment:
