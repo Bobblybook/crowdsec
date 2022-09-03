@@ -28,7 +28,7 @@ services:
       TZ: "Australia/Melbourne"
     volumes:
       # Crowdsec read-only database
-      - ./data/db/crowdsec.db:/metabase-data/crowdsec.db
+      - ./data/db/crowdsec.db:/metabase-data/crowdsec.db:ro
       # Local metabase db, with preconfigured dashboards
       - ./data/metabase/metabase.db.mv.db:/app/metabase.db.mv.db
     ports:
